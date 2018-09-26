@@ -1,6 +1,15 @@
 # bag-of-words
 Forked from https://github.com/bikz05/bag-of-words
 
+## Dependencies
+
+The application runs on **python3.6.5** with **opencv release 3.4.0.12**
+
+```
+pip install opencv-python==3.4.0.12
+pip install opencv-contrib-python==3.4.0.12
+```
+
 ## Training the classifier
 ```
 python findFeatures.py -t dataset/train/
@@ -15,8 +24,13 @@ The `--visualize` flag will display the image with the corresponding label print
 
 * Testing a single image
 ```
-python getClass.py -i dataset/test/aeroplane/test_1.jpg --visualize
+python getClass.py -i dataset/test/n02085782-Japanese_spaniel/n02085782_126.jpg --visualize
 ```
+
+<p align="center">
+  <img src="./img/Figure_1.png" alt="Presentation image"
+       width="400" height="300">
+</p>
 
 # Troubleshooting
 
